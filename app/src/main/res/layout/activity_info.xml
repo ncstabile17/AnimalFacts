@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nickinc.listapp.InfoActivity"
+    android:background="#dc33b5e5">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:id="@+id/animalImage"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Name: Octopus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animalName"
+        android:textSize="18sp"
+        android:layout_below="@+id/animalImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:text="True or False?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animalName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:id="@+id/trueFalse"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trueFalse"
+        android:layout_marginTop="20dp"
+        android:id="@+id/questionText"
+        android:maxHeight="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Look at this fake question"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="True"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:id="@+id/trueButton"
+        android:layout_below="@+id/trueFalse"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:text="False"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/trueFalse"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/falseButton" />
+
+    <TextView
+        android:text="60S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animalName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/timerText"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="0/0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trueButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/scoreText"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trueButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop = "10dp"
+        android:id="@+id/correctText" />
+
+    <Button
+        android:text="Play Again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/playAgain" />
+
+    <TextView
+        android:text="Click Start to see how many questions you can answer in 1 minute!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoText"
+        android:layout_below="@+id/questionText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/startButton" />
+</RelativeLayout>
